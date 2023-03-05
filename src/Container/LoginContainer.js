@@ -1,10 +1,11 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Login from "../Conponent/Auth/Login";
 
 function LoginContainer(props) {
   return (
-    <div>
-      <h1>Ban hay dang nhap tai khoan</h1>
-    </div>
+    <Fragment>
+      <Login />
+    </Fragment>
   );
 }
 

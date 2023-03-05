@@ -1,0 +1,8 @@
+.movieListContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 26px;
+    justify-content: space-evenly;
+}

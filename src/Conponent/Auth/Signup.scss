@@ -1,0 +1,44 @@
+.container {
+  text-align: center;
+  margin-top: 15px;
+  width: 38%;
+  .container-header {
+    .title {
+      font-family: "Hanalei Fill", cursive;
+      font-size: 35px;
+      padding: 15px 0;
+      cursor: pointer;
+    }
+    .content {
+      margin-bottom: 30px;
+    }
+    .form-header {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 25px;
+      .form-content {
+        width: 90%;
+      }
+      .btn {
+        width: 80%;
+        background-color: rgba(13, 110, 253, 0.7) !important;
+        border-radius: 10px;
+      }
+    }
+  }
+  .container-content {
+    margin-bottom: 15px;
+    .footer-content {
+        .login-text {
+            text-decoration: none;
+        }
+    }
+  }
+  .container-footer {
+    margin-bottom: 15px;
+
+    .app-icon {
+        margin-top: 10px;
+    }
+  }
+}

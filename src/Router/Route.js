@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Login from "../Pages/LoginPage";
-import Logout from "../Pages/LogoutPage";
+import Signup from "../Pages/SignupPage";
 import MoviePage from "../Pages/MoviePage";
 import TicketPage from "../Pages/TicketPage";
 import HomePage from "../Pages/HomePage";
@@ -20,7 +20,7 @@ const route = () => {
         <Route path="articles" element={<ArticlePage />}></Route>
         <Route path="community" element={<CommnityPage />}></Route>
         <Route path="login" element={<Login />}></Route>
-        <Route path="logout" element={<Logout />}></Route>
+        <Route path="signup" element={<Signup />}></Route>
       </Routes>
     </div>
   );

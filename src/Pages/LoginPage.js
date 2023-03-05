@@ -1,11 +1,11 @@
-import React from "react";
+import React, { Fragment } from "react";
 import LoginContainer from "../Container/LoginContainer";
 
 function LoginPage(props) {
   return (
-    <div>
+    <Fragment>
       <LoginContainer />
-    </div>
+    </Fragment>
   );
 }
 

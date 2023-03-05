@@ -1,3 +1,4 @@
+import "./App.scss";
 import Menu from "./Router/Menu";
 import route from "./Router/Route";
 
