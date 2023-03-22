@@ -1,0 +1,53 @@
+$text-color : rgb(13, 110, 253);
+$button-color : rgba(13, 110, 253, 0.7);
+
+.login-container {
+  text-align: center;
+  .title {
+    font-family: 'Hanalei Fill', cursive;
+    font-size: 35px;
+    padding: 15px 0;
+  }
+  .title:hover {
+    cursor: pointer;
+  }
+  .content-form {
+    font-size: 20px;
+    padding: 10px 0;
+    .form-group {
+      margin-bottom: 20px;
+      .form-control {
+        margin: 10px 0;
+        border-radius: 10px;
+      }
+    }
+    .login-btn {
+      background-color: $button-color;
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .log-in-with {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+    .forgot-pass {
+      font-size: 15px;
+    }
+  }
+  .content-text {
+    .text-signup {
+      color: $text-color;
+      text-decoration: none;
+    }
+  }
+  .footer {
+    padding: 10px 0;
+    .app-icon {
+      padding: 15px 0;
+    }
+  }
+}
+
+

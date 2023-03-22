@@ -1,0 +1,46 @@
+.signup-container {
+  text-align: center;
+  margin-top: 15px;
+  width: 38%;
+    .title {
+      font-family: "Hanalei Fill", cursive;
+      font-size: 35px;
+      padding: 15px 0;
+      cursor: pointer;
+    }
+    .content-form {
+      font-size: 20px;
+      padding: 10px 0;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 25px;
+      .form-control {
+        margin: 10px 0;
+        border-radius: 10px;
+      }
+      .signup-btn {
+        background-color: rgba(13, 110, 253, 0.7);
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+    }
+  .container-content {
+    margin-bottom: 15px;
+    .footer-content {
+        .login-text {
+            text-decoration: none;
+        }
+    }
+  }
+  .container-footer {
+    padding: 10px 0;
+
+    .app-icon {
+      padding: 15px 0;
+    }
+  }
+}

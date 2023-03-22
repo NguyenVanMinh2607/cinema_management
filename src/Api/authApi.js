@@ -1,11 +1,11 @@
-import { apiAuth } from "./api";
+// import { apiAuth } from "./api";
 
-const loginApi = (user) => {
-  return apiAuth("POST", "login", user);
-};
+// const loginApi = (user) => {
+//   return apiAuth("POST", "login", user);
+// };
 
-const signupApi = (userNew) => {
-  return apiAuth("POST", "register", userNew);
-};
+// const signupApi = (userNew) => {
+//   return apiAuth("POST", "register", userNew);
+// };
 
-export { loginApi, signupApi };
+// export { loginApi, signupApi };

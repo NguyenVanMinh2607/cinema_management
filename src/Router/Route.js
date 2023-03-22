@@ -1,13 +1,13 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Login from "../Pages/LoginPage";
-import Signup from "../Pages/SignupPage";
-import MoviePage from "../Pages/MoviePage";
+import Login from "../Pages/Users/LoginPage";
+import Signup from "../Pages/Users/SignupPage";
+import MoviePage from "../Pages/Movies/Movie";
 import TicketPage from "../Pages/TicketPage";
-import HomePage from "../Pages/HomePage";
-import CinemaPage from "../Pages/CinemaPage";
+import HomePage from "../Pages/Home/Home";
 import CommnityPage from "../Pages/CommnityPage";
 import ArticlePage from "../Pages/ArticlePage";
+import TvShow from "../Pages/TVShow/TvShow";
 
 const route = () => {
   return (
@@ -16,7 +16,7 @@ const route = () => {
         <Route path="/" element={<HomePage />}></Route>
         <Route path="tickets" element={<TicketPage />}></Route>
         <Route path="movies" element={<MoviePage />}></Route>
-        <Route path="cinemas" element={<CinemaPage />}></Route>
+        <Route path="tv-shows" element={<TvShow />}></Route>
         <Route path="articles" element={<ArticlePage />}></Route>
         <Route path="community" element={<CommnityPage />}></Route>
         <Route path="login" element={<Login />}></Route>
