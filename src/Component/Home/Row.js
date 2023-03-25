@@ -3,7 +3,12 @@ import "./_row.scss";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { HiStar } from "react-icons/hi";
-import { actionGetMoviesDetailAPI } from "../../Redux/Action/MovieAction";
+import {
+  actionGetMoviesDetailAPI,
+  actionGetSimilarMoviesAPI,
+  actionMoviesCreditsAPI,
+  actionMoviesVideosAPI,
+} from "../../Redux/Action/MovieAction";
 
 function Row(props) {
   const { title, list, path } = props;
@@ -12,9 +17,9 @@ function Row(props) {
   const handleMovies = (item) => {
     if (item.media_type === "movie") {
       dispatch(actionGetMoviesDetailAPI(item.id));
-      //   dispatch(actionGetSimilarMoviesAPI(item.id));
-      //   dispatch(actionMoviesCreditsAPI(item.id));
-      //   dispatch(actionMoviesVideosAPI(item.id));
+      dispatch(actionGetSimilarMoviesAPI(item.id));
+      dispatch(actionMoviesCreditsAPI(item.id));
+      dispatch(actionMoviesVideosAPI(item.id));
     }
     if (item.media_type === "tv") {
       //   dispatch(actionGetTVDetailListAPI(item.id));

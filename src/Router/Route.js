@@ -8,6 +8,7 @@ import HomePage from "../Pages/Home/Home";
 import CommnityPage from "../Pages/CommnityPage";
 import ArticlePage from "../Pages/ArticlePage";
 import TvShow from "../Pages/TVShow/TvShow";
+import MoviesItem from "../Pages/Movies/MoviesItem";
 
 const route = () => {
   return (
@@ -16,6 +17,7 @@ const route = () => {
         <Route path="/" element={<HomePage />}></Route>
         <Route path="tickets" element={<TicketPage />}></Route>
         <Route path="movies" element={<MoviePage />}></Route>
+        <Route path="/movies/:id" element={<MoviesItem />} />
         <Route path="tv-shows" element={<TvShow />}></Route>
         <Route path="articles" element={<ArticlePage />}></Route>
         <Route path="community" element={<CommnityPage />}></Route>

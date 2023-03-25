@@ -105,7 +105,6 @@ export const actionMoviesCreditsAPI = (movieID) => {
   return async (dispatch) => {
     const res = await getMoviesCreditsAPI(movieID);
     dispatch(actionMoviesCredits(res.data.cast));
-    console.log(res.data.cast);
   };
 };
 

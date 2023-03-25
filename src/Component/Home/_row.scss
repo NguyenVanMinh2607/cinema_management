@@ -11,6 +11,9 @@ $gradient: linear-gradient(to right, $secondary, $secondary-1);
     max-width: 1600px;
     margin: 50px auto;
   }
+  &-title {
+    color: #333;
+  }
 
   &-items {
     display: flex;

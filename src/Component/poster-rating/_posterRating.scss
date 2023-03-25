@@ -1,0 +1,62 @@
+.item {
+  &-content {
+    &-posterRating {
+      width: 350px;
+      overflow: hidden;
+      &-image {
+        width: 100%;
+        display: inline-block;
+        border-radius: 30px;
+        object-fit: cover;
+        margin-bottom: 30px;
+      }
+      &-item {
+        color: #fff;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &-vote {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        padding-right: 10px;
+        border-right: 1px solid $dark;
+        position: relative;
+      }
+      &-numVoted {
+        width: 42px;
+        height: 42px;
+        border-radius: 100rem;
+        color: $secondary;
+        font-size: 18px;
+        margin-right: 5px;
+        background-color: $primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &-maxVote {
+        width: 48px;
+        height: 48px;
+        border-radius: 100rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(-3px, -3px);
+        z-index: -1;
+      }
+      &-rating,
+      &-review {
+        display: block;
+        &-text {
+          font-size: 12px;
+          color: $dark;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
