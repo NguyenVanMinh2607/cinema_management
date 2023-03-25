@@ -1,18 +1,18 @@
 import { API_KEY, api } from "./api";
 
-const getTrendingMoviesAPI = () => {
+export const getTrendingMoviesAPI = () => {
   return api("GET", `trending/movie/day?api_key=${API_KEY}`, null);
 };
 
-const getTopRatedMoviesAPI = () => {
+export const getTopRatedMoviesAPI = () => {
   return api("GET", `movie/top_rated?api_key=${API_KEY}&page=1`, null);
 };
 
-const getPopularMoviesAPI = (page) => {
+export const getPopularMoviesAPI = (page) => {
   return api("GET", `movie/popular?api_key=${API_KEY}&page=${page}`, null);
 };
 
-const getSearchMoviesList = (page, keyWords) => {
+export const getSearchMoviesListAPI = (page, keyWords) => {
   return api(
     "GET",
     `search/movie?api_key=${API_KEY}&page=${page}&query=${keyWords}`,
@@ -20,19 +20,18 @@ const getSearchMoviesList = (page, keyWords) => {
   );
 };
 
-const getMoviesDetail = (movieID) => {
+export const getMoviesDetailAPI = (movieID) => {
   return api("GET", `movie/${movieID}?api_key=${API_KEY}`, null);
 };
 
-const getMoviesVideos = (movieID) => {
-  return api("GET", `movie/${movieID}/videos?api_key=${API_KEY}`, null);
+export const getSimilarMoviesAPI = (movieID) => {
+  return api("GET", `movie/${movieID}/similar?api_key=${API_KEY}&page=1`, null);
 };
 
-export {
-  getTrendingMoviesAPI,
-  getTopRatedMoviesAPI,
-  getPopularMoviesAPI,
-  getSearchMoviesList,
-  getMoviesDetail,
-  getMoviesVideos,
+export const getMoviesCreditsAPI = (movieID) => {
+  return api("GET", `movie/${movieID}/credits?api_key=${API_KEY}`, null);
+};
+
+export const getMoviesVideosAPI = (movieID) => {
+  return api("GET", `movie/${movieID}/videos?api_key=${API_KEY}`, null);
 };

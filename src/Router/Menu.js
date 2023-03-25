@@ -42,7 +42,7 @@ function Menu() {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="/cinemas" className="nav-link">
+            <NavLink to="/tv-shows" className="nav-link">
               TV Shows
             </NavLink>
           </NavItem>

@@ -4,7 +4,11 @@ const initialState = {
   trendingMoviesList: {},
   topRatedMoviesList: {},
   popularMoviesList: {},
+  moviesSearchList: {},
   moviesDetail: {},
+  similarMoviesList: {},
+  moviesVideos: {},
+  moviesCredits: {},
 };
 
 const MovieReducer = (state = initialState, action) => {
@@ -19,8 +23,21 @@ const MovieReducer = (state = initialState, action) => {
     case TYPES.GET_POPULAR_MOVIES:
       return { ...state, popularMoviesList: payload };
 
+    case TYPES.SEARCH_MOVIES_LIST:
+      return { ...state, moviesSearchList: action.payload };
+
     case TYPES.GET_MOVIES_DETAIL:
-      return { ...state, moviesDetail: payload };
+      return { ...state, moviesDetail: action.payload };
+
+    case TYPES.GET_SIMILAR_MOVIES:
+      return { ...state, similarMoviesList: action.payload };
+
+    case TYPES.GET_MOVIES_VIDEOS:
+      return { ...state, moviesVideos: action.payload };
+
+    case TYPES.GET_MOVIES_CREDITS:
+      return { ...state, moviesCredits: action.payload };
+
     default:
       return state;
   }
