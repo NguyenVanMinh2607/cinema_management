@@ -9,13 +9,11 @@ function Signup(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [fullName, setFullName] = useState("");
-  const [role, setRole] = useState("");
 
   const newUser = {
     email: email,
     password: password,
     fullName: fullName,
-    role: role,
   };
 
   const handleSignup = (e) => {
@@ -48,19 +46,7 @@ function Signup(props) {
           value={fullName}
           onChange={(e) => setFullName(e.target.value)}
         ></Input>
-        <Input
-          className="form-control"
-          name="role"
-          type="select"
-          value={role}
-          onChange={(e) => {
-            setRole(e.target.value);
-          }}
-        >
-          <option value="">Please select an option</option>
-          <option value="Admin">Admin</option>
-          <option value="Customer">Customer</option>
-        </Input>
+
         <Button check="true" className="signup-btn">
           Signup
         </Button>

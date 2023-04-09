@@ -29,10 +29,6 @@ function MoviesItem(props) {
     });
     setLike(false);
   };
-  console.log(moviesDetail);
-  //   console.log(similarMoviesList);
-  //   console.log(moviesCredits);
-  //   console.log(moviesVideos);
 
   return (
     <div>
